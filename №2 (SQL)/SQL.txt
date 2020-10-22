@@ -1,0 +1,3 @@
+SELECT department, count(full_name) FROM employees
+GROUP BY department
+HAVING count(full_name) < 5 AND position = 'Software Developer'
